@@ -26,7 +26,7 @@ except Exception as e:
     exit()
 
 # Lecture des données
-query = "SELECT Authors FROM dblp2 LIMIT 5000;"  # Assurez-vous que la table `OriginalTable` existe et est correcte.
+query = "SELECT Authors FROM dblp4 LIMIT 5000;"  # Assurez-vous que la table `OriginalTable` existe et est correcte.
 original_df = pd.read_sql_query(query, conn)
 
 # Fonction pour parser les auteurs et leurs ORCID

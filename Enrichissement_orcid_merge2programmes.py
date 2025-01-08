@@ -6,9 +6,9 @@ import re
 db_config = {
     'server': '82.65.62.161',
     'port': 1433,
-    'user': 'sa',
-    'password': 'SaeCataldi!',
-    'database': 'master',
+    'user': 'sae',
+    'password': 'Cataldi123',
+    'database': 'dblp_data',
 }
 
 # Création de l'engine SQLAlchemy

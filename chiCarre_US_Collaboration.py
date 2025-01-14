@@ -8,7 +8,7 @@ db_config = {
     'port': 1433,
     'user': 'sae',
     'password': 'Cataldi123',
-    'database': 'dblp_data',
+    'database': 'dblp4', # Mettre à jour la database
 }
 
 # Requête pour obtenir les données nécessaires
@@ -22,10 +22,6 @@ def get_data_for_chi_square(connection):
         Person p
     JOIN 
         Production pr ON p.person_id = pr.person_id
-    JOIN 
-        Workplace w ON p.workplace_id = w.workplace_id
-    JOIN 
-        Country c ON w.country_id = c.country_id
     GROUP BY 
         p.person_id, c.country_name
     """

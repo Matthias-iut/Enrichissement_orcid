@@ -21,7 +21,7 @@ def get_data_for_chi_square(connection):
     FROM 
         Person p
     JOIN 
-        Production pr ON p.person_id = pr.person_id
+        Contribuer cr ON p.person_id = cr.person_id
     GROUP BY 
         p.person_id, c.country_name
     """
